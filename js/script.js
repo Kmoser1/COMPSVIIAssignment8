@@ -13,7 +13,7 @@ function handleAnswerClick(event) {
     const questionBlock = button.closest('div[id^="question-"]');
     const questionId = questionBlock.id; // 'question-1' etc
     
-    // Remove 'selected' class from all answers in this question
+    // Remove 'selected' class from all answers in this question (loop)
     const answerButtons = questionBlock.querySelectorAll('.answer-btn');
     answerButtons.forEach(btn => btn.classList.remove('selected'));
     
